@@ -2,6 +2,15 @@
 
 int fatorial(int numero){
 
+    int resultado;
+
+    
+    if(numero == 0){
+        resultado = 1;
+    } else {
+            resultado = numero * fatorial(numero-1);
+    }
+    return resultado;
 }
 
 
@@ -14,4 +23,6 @@ int main(void){
     scanf("%d", &numero);
 
     total = fatorial(numero);
+
+    printf("total = %i", total);
 }
